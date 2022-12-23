@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+</head>
+<body>
+ 
+    <canvas id="canvas"></canvas>
+   
+<script>
+ 
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var x, x0, xf, y0, yf; // declaração de variavel inicializando-a com um valor.
+let y, m; // Declara uma variável local de escopo do bloco
+ 
+x=50;
+xf=100;
+y0=100;
+yf=100;
+ 
+m = (yf -y0) / (xf -x0);
+
+
+ctx.beginPath();
+ctx.moveTo(x, xf);
+ctx.lineTo(y0, yf);
+ctx.stroke();
+ 
+</script>
+ 
+ 
+ 
+</body>
+</html>
